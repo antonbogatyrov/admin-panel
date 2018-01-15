@@ -24,7 +24,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       fileName: 'index.html',
-      title: 'Bone',
+      title: 'Admin Panel',
       inject: 'body',
     }),
     new FaviconsWebpackPlugin({
