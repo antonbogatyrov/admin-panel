@@ -2,5 +2,24 @@
   "name": "admin-panel",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "eslint": "eslint ./",
+    "build": "webpack",
+    "serve": "webpack-dev-server --env.env=dev",
+    "build:prod": "yarn build -- --env.env=production",
+    "build:dev": "yarn build -- --env.env=dev",
+    "test": "yarn jest",
+    "test:coverage": "yarn jest -- --coverage"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "favicons-webpack-plugin": "^0.0.7",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.10.0",
+    "webpack-cleanup-plugin": "^0.5.1",
+    "webpack-dev-server": "^2.11.0",
+    "webpack-merge": "^4.1.1"
+  }
 }
