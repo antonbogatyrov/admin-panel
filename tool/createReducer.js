@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const prompt = require('prompt');
 const { readdir, lstatSync } = require('fs');
 const util = require('util');
