@@ -3,8 +3,9 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-
+import { Base } from './container';
 import reducer from './reducer';
+import MaterialTheme from './MaterialTheme';
 
 const store = createStore(
   reducer,
@@ -13,8 +14,8 @@ const store = createStore(
 
 export default () => (
   <Provider store={store}>
-    <div>
-      Hello Word
-    </div>
+    <MaterialTheme>
+      <Base />
+    </MaterialTheme>
   </Provider>
 );
