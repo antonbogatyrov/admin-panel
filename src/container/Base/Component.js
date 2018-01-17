@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 class CustomComponent extends Component {
   static propTypes = {
     world: PropTypes.string,
+    classes: PropTypes.shape().isRequired,
   };
 
   static defaultProps = {
@@ -16,9 +17,9 @@ class CustomComponent extends Component {
 
   render() {
     const { hello } = this.state;
-    const { world } = this.props;
+    const { world, classes } = this.props;
     return (
-      <div>
+      <div className={classes.base}>
         {hello} {world}
       </div>
     );

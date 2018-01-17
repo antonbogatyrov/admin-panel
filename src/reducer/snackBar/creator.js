@@ -3,5 +3,6 @@ import { createAction } from 'redux-actions';
 import action from './action';
 
 export default {
-  init: createAction(action.INIT),
+  open: createAction(action.SNACK_BAR_OPEN),
+  close: createAction(action.SNACK_BAR_CLOSE),
 };

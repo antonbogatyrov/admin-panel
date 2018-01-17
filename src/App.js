@@ -1,11 +1,13 @@
-/* eslint-disable no-underscore-dangle */
 
+/* eslint-disable no-underscore-dangle */
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { Base } from './container';
+
+import { Template, BaseTemplate } from './container';
 import reducer from './reducer';
 import MaterialTheme from './MaterialTheme';
+
 
 const store = createStore(
   reducer,
@@ -15,7 +17,13 @@ const store = createStore(
 export default () => (
   <Provider store={store}>
     <MaterialTheme>
-      <Base />
+      <BaseTemplate>
+        <Template>
+          <div>
+            hello world
+          </div>
+        </Template>
+      </BaseTemplate>
     </MaterialTheme>
   </Provider>
 );

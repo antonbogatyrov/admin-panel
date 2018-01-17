@@ -1,0 +1,4 @@
+export default {
+  SNACK_BAR_OPEN: 'SNACK_BAR_OPEN',
+  SNACK_BAR_CLOSE: 'SNACK_BAR_CLOSE',
+};

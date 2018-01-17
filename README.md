@@ -18,5 +18,5 @@
 ## Check code
 
 ```sh
- yarn eslint
+ yarn lint
 ```

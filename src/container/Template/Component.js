@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MuiThemeProvider } from 'material-ui/styles';
-import Reboot from 'material-ui/Reboot';
-import theme from './theme';
+import { Header } from '../../component';
 
 const CustomComponent = ({ children }) => (
-  <MuiThemeProvider theme={theme}>
-    <Reboot />
+  <div>
+    <Header />
     {children}
-  </MuiThemeProvider>
+  </div>
 );
 
 CustomComponent.propTypes = {

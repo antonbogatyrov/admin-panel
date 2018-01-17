@@ -5,8 +5,14 @@ const config = {
   },
   devtool: 'eval',
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
 };
 
 module.exports = config;
+

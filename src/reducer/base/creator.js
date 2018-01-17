@@ -1,7 +1,7 @@
-import { createActions } from 'redux-actions';
+import { createAction } from 'redux-actions';
 
 import action from './action';
 
 export default {
-  init: createActions(action.INIT),
+  init: createAction(action.INIT),
 };
