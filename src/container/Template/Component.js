@@ -1,16 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header } from '../../component';
+import { SnackBar, Header } from '../../component';
 
-const CustomComponent = ({ children }) => (
-  <div>
+const Component = ({
+  classes, children, snackBarMessage, openSnackBar, closeSnackBar,
+}) => (
+  <div className={classes.base}>
     <Header />
     {children}
+    <SnackBar open={openSnackBar} message={snackBarMessage} onClose={closeSnackBar} />
   </div>
 );
 
-CustomComponent.propTypes = {
+Component.propTypes = {
+  classes: PropTypes.shape().isRequired,
   children: PropTypes.node.isRequired,
+  snackBarMessage: PropTypes.string.isRequired,
+  openSnackBar: PropTypes.bool.isRequired,
+  closeSnackBar: PropTypes.func.isRequired,
 };
 
-export default CustomComponent;
+export default Component;
