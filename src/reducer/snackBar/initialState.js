@@ -1,4 +1,4 @@
 export default {
-  open: true,
-  message: 'test',
+  open: false,
+  message: '',
 };
