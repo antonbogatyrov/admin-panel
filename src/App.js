@@ -4,8 +4,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import { Template } from './container';
 import reducer from './reducer';
+import Route from './Route';
 import MaterialTheme from './MaterialTheme';
 
 
@@ -17,11 +17,7 @@ const store = createStore(
 export default () => (
   <Provider store={store}>
     <MaterialTheme>
-      <Template>
-        <div>
-          hello world
-        </div>
-      </Template>
+      <Route />
     </MaterialTheme>
   </Provider>
 );
